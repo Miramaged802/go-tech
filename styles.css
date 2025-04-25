@@ -190,7 +190,7 @@ nav.scrolled {
       rgba(26, 75, 132, 0),
       rgba(26, 75, 132, 0.7)
     ),
-    url("https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+    url("img/bannar.avif");
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -209,7 +209,7 @@ nav.scrolled {
       rgba(26, 76, 132, 0.434),
       rgba(26, 75, 132, 0.9)
     ),
-    url("https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+    url("img/bannar.avif");
 }
 
 .hero-content {
