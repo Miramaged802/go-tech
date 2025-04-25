@@ -860,14 +860,15 @@ nav.scrolled {
 }
 
 .whatsapp-button {
+  text-decoration: none;
   z-index: 1000;
   position: fixed;
   bottom: 20px;
   left: 20px;
   background-color: #25d366;
   color: white;
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -881,88 +882,8 @@ nav.scrolled {
   transform: scale(1.1);
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
 }
-.wats {
-  background-color: #098b39;
-}
-
-/* صندوق المحادثة */
-.whatsapp-chatbox {
-  position: fixed;
-  bottom: 90px;
-  left: 20px;
-  width: 280px;
-  z-index: 1000;
-  background: #1c1c1c;
-  border-radius: 15px;
-  width: 350px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  display: none;
-  flex-direction: column;
-  animation: fadeIn 0.3s ease-in-out;
-}
-.whatsapp-header {
-  background: #1da851;
-  color: white;
-  padding: 10px;
-  display: flex;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 16px;
-}
-.whatsapp-header i {
-  cursor: pointer;
-}
-.whatsapp-body {
-  padding: 15px;
-  color: white;
-  font-size: 14px;
-}
-.whatsapp-message {
-  background: #555;
-  padding: 10px;
-  border-radius: 10px;
-  max-width: 80%;
-  position: relative;
-  margin-bottom: 10px;
-}
-.whatsapp-message::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: -10px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent transparent #555;
-}
-.whatsapp-footer {
-  text-align: left;
-  width: 100%;
-  padding: 10px;
-}
-.whatsapp-footer a {
-  color: white;
-
-  width: 45%;
-  text-decoration: none;
-  padding: 10px 15px;
-  border-radius: 25px;
-  display: inline-block;
-  font-size: 18px;
-  font-weight: bold;
-}
-.whatsapp-footer a i {
-  margin-right: 5px;
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
-
-  margin-left: 5px;
-}
-
-.whatsapp-footer a:hover {
-  background: #1da851;
+.whatsapp-button i {
+  font-size: 50px;
 }
 
 /* Modern Dark Footer */
