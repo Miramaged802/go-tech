@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>خدمات صيانة الأجهزة المنزلية</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <nav>
+        <div class="logo">صيانة الأجهزة المنزلية</div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+        <div class="nav-links">
+          <a href="#services" class="nav-item">الخدمات</a>
+          <a href="#features" class="nav-item">المميزات</a>
+          <a href="#contact" class="nav-item">اتصل بنا</a>
+        </div>
+      </nav>
+      <div class="hero-content">
+        <h1 id="hero-title">ضمان حقيقي لمدة 6 شهور على جميع خدماتنا!</h1>
+        <p>
+          بنقدملك أفضل خدمات الصيانة المعتمدة للأجهزة المنزلية، وبنستخدم قطع
+          غيار أصلية مع فنيين محترفين.
+        </p>
+        <a href="#contact" class="cta-button">احجز الآن</a>
+      </div>
+    </header>
+
+    <section id="services" class="services">
+      <h2>الخدمات المتوفرة</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <i class="fas fa-snowflake"></i>
+          <h3>صيانة جميع أنواع التكييفات</h3>
+          <ul>
+            <li>تنظيف</li>
+            <li>شحن فريون</li>
+            <li>تصليح كمبروسر</li>
+            <li>تركيب</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-tshirt"></i>
+          <h3>صيانة الغسالات بجميع موديلاتها</h3>
+          <ul>
+            <li>أعطال كهرباء</li>
+            <li>صرف</li>
+            <li>طلمبة</li>
+            <li>محرك</li>
+            <li>لوحة تحكم</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-temperature-low"></i>
+          <h3>صيانة الثلاجات والفريزرات</h3>
+          <ul>
+            <li>ضعف التبريد</li>
+            <li>تسريب فريون</li>
+            <li>صوت عالي</li>
+            <li>توقف مفاجئ</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-tv"></i>
+          <h3>صيانة الشاشات</h3>
+          <ul>
+            <li>أعطال الباور</li>
+            <li>الشاشة السوداء</li>
+            <li>مشاكل في الصورة أو الصوت</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <h2>مميزاتنا</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <i class="fas fa-tools"></i>
+          <p>فحص شامل واحترافي</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-cogs"></i>
+          <p>تغيير قطع غيار أصلية أو بجودة عالية</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-shield-alt"></i>
+          <p>ضمان 6 شهور على الصيانة والقطع</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-clock"></i>
+          <p>خدمة طوارئ خلال 24 ساعة</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-truck"></i>
+          <p>خدمة نقل وصيانة في الورشة في حالة الأعطال الكبيرة</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-wrench"></i>
+          <p>تركيب وتشغيل الأجهزة بعد التصليح</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-search"></i>
+          <p>كشف مجاني في حالة إتمام الصيانة</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>اتصل بنا الآن واحجز زيارتك</h2>
+      <div class="contact-container">
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper">
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-group">
+              <input type="text" id="name" name="name" required />
+              <label for="name">الاسم</label>
+              <span class="error-message">يرجى إدخال الاسم</span>
+            </div>
+
+            <div class="form-group">
+              <input type="email" id="email" name="email" required />
+              <label for="email">البريد الإلكتروني</label>
+              <span class="error-message">يرجى إدخال بريد إلكتروني صحيح</span>
+            </div>
+
+            <div class="form-group">
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+              ></textarea>
+              <label for="message">رسالتك</label>
+              <span class="error-message">يرجى إدخال رسالتك</span>
+            </div>
+
+            <button type="submit" class="submit-button">
+              <span>إرسال</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info-wrapper">
+          <div class="contact-info-content">
+            <h3>تواصل معنا مباشرة</h3>
+            <p class="contact-description">
+              نحن هنا لمساعدتك في أي وقت. اتصل بنا عبر:
+            </p>
+
+            <div class="contact-methods">
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div class="contact-text">
+                  <h4>اتصل بنا</h4>
+                  <p>01066237775</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="fab fa-whatsapp"></i>
+                <div class="contact-text">
+                  <h4>واتساب</h4>
+                  <p>01066238880</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="fas fa-clock"></i>
+                <div class="contact-text">
+                  <h4>ساعات العمل</h4>
+                  <p>24/7 في خدمتك</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-area">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>نخدمك في أي وقت وفي أي مكان!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      <div class="whatsapp-button" id="whatsappBtn">
+      <i class="fab fa-whatsapp"></i>
+    </div>
+
+    <!-- نافذة المحادثة -->
+    <div class="whatsapp-chatbox" id="chatBox">
+      <div class="whatsapp-header">
+        <span><i class="fab fa-whatsapp"></i> WhatsApp</span>
+        <i class="fas fa-times" id="closeChat"></i>
+      </div>
+      <div class="whatsapp-body">
+        <div class="whatsapp-message">
+          مرحبًا! <br />
+          كيف يمكننا مساعدتك؟
+        </div>
+      </div>
+      <div class="whatsapp-footer">
+        <a href="https://wa.me/201066237775" target="_blank" class="wats">
+          <i class="fas fa-paper-plane"></i>تواصل معنا</a
+        >
+      </div>
+    </div>
+    <footer>
+      <p>جميع الحقوق محفوظة © 2025</p>
+    </footer>
+
+   
+    <script src="script.js"></script>
+  </body>
+</html>
