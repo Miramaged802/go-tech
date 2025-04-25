@@ -257,7 +257,7 @@ nav.scrolled {
   display: inline-block;
   padding: 1rem 2rem;
   background-color: var(--accent-yellow);
-  color: var(--text-dark);
+  color: var(--primary-blue);
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
@@ -730,10 +730,9 @@ nav.scrolled {
   transform: scale(1.1);
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
 }
-.wats{
+.wats {
   background-color: #098b39;
 }
-
 
 /* صندوق المحادثة */
 .whatsapp-chatbox {
@@ -812,4 +811,128 @@ nav.scrolled {
 
 .whatsapp-footer a:hover {
   background: #1da851;
+}
+
+/* Modern Dark Footer */
+.site-footer {
+  background:var(--primary-blue);
+  color: #fff;
+  padding: 2.5rem 0 1.2rem 0;
+  text-align: center;
+  font-size: 1.08rem;
+  letter-spacing: 0.01em;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto 1.5rem auto;
+  padding: 0 2rem;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.footer-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+  flex: 1 1 120px;
+  text-align: left;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 2.5rem;
+  flex: 2 1 300px;
+  justify-content: center;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.08rem;
+  transition: color 0.3s, border-bottom 0.3s;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+.footer-link:hover,
+.footer-link:focus {
+  color: #4f8cff;
+  border-bottom: 2px solid #4f8cff;
+}
+
+.footer-social {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex: 1 1 120px;
+  justify-content: flex-end;
+}
+
+.footer-social-icon {
+  list-style: none;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  background: var(--accent-yellow);
+  color: var(--primary-blue);
+  transition: background 0.3s, color 0.3s, transform 0.3s;
+}
+
+.footer-social-icon:hover,
+.footer-social-icon:focus {
+  background: #4f8cff;
+  color: #fff;
+  transform: translateY(-2px) scale(1.08);
+}
+.footer-social-icon.facebook:hover {
+  background: #1877f2;
+}
+.footer-social-icon.twitter:hover {
+  background: #1da1f2;
+}
+.footer-social-icon.instagram:hover {
+  background: #e4405f;
+}
+.footer-social-icon.github:hover {
+  background: #24292e;
+}
+
+.footer-divider {
+  border: none;
+  border-top: 1px solid var(--secondary-blue);
+  margin: 0 auto 1.2rem auto;
+  max-width: 90%;
+}
+
+.footer-bottom {
+  color: #bbb;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 900px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.2rem;
+    padding: 0 1rem;
+  }
+  .footer-logo,
+  .footer-social {
+    text-align: center;
+    justify-content: center;
+  }
+  .footer-nav {
+    gap: 1.2rem;
+  }
 }
